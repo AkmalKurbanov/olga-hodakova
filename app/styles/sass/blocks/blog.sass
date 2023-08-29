@@ -1,0 +1,224 @@
+.blog
+  background: #12181F
+  padding: rem(150) 0
+  overflow: hidden
+
+  @media (max-width: 1699px)
+    padding: rem(120) 0
+
+  @media (max-width: 1500px)
+    padding: rem(100) 0
+
+  @include lg
+    padding: rem(80) 0
+
+  @include md
+    padding: rem(60) 0
+
+  @include sm
+    padding: rem(40) 0
+
+  .title
+    margin-bottom: rem(30)
+
+  &__flex-wrap
+    @include jfcsb
+    margin-top: rem(25)
+    position: relative
+
+  &__flex-col
+    width: 100%
+    position: relative
+
+    &:first-child
+      max-width: rem(780)
+      margin-right: rem(120)
+
+      @media (max-width: 1699px)
+        max-width: rem(500)
+        margin-right: rem(60)
+
+      @media (max-width: 1500px)
+        margin-right: rem(30)
+
+      @include md
+        display: none
+
+      .blur-elem
+        position: absolute
+        left: rem(-350)
+        top: 50%
+        transform: translateY(-50%)
+
+    &:nth-child(2)
+      max-width: 100%
+
+      .blur-elem
+        position: absolute
+        width: rem(570)
+        height: rem(570)
+        right: rem(-285)
+        left: auto
+        top: auto
+        bottom: rem(-185)
+
+        svg
+          width: 100%
+
+  &__img
+    @include aic-jcc
+    position: relative
+    max-height: rem(160)
+    min-height: rem(160)
+    width: 100%
+    max-width: rem(200)
+    min-width: rem(200)
+
+    @media (max-width: 1699px)
+      max-height: rem(140)
+      min-height: rem(140)
+      max-width: rem(180)
+      min-width: rem(180)
+
+    @media (max-width: 1500px)
+      max-height: rem(120)
+      min-height: rem(120)
+      max-width: rem(160)
+      min-width: rem(160)
+
+    img
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__article
+    display: flex
+    padding: rem(20) 0
+    border-bottom: rem(1) solid #9E9E9E
+
+    &:first-child
+      padding-top: 0
+
+    &_main
+      display: block
+      border: none
+      padding: 0
+
+      .blog__img
+        margin-bottom: rem(30)
+        max-height: rem(445)
+        min-height: rem(445)
+        max-width: 100%
+        margin-bottom: rem(20)
+
+        @media (max-width: 1699px)
+          max-height: rem(245)
+          min-height: rem(245)
+
+      .blog__title
+        margin-bottom: rem(10)
+
+      .blog__annotation
+        margin: rem(30) 0
+        display: block
+
+  &__article-col
+
+    &:first-child
+      margin-right: rem(30)
+
+      @media (max-width: 1699px)
+        margin-right: rem(15)
+
+    &:last-child
+      width: 100%
+      @include fdc-jfcsb
+
+  &__annotation
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    width: 100%
+
+    @include sm
+      flex-direction: column
+      align-items: flex-start
+    p
+      max-width: rem(480)
+      width: 100%
+
+      @include lg
+        font-size: rem(16)!important
+
+    .more
+      @include lg
+        font-size: rem(10)!important
+        padding-right: rem(20)
+
+        .icon
+          width: rem(15)
+
+      @include sm
+        margin-top: rem(10)
+
+  .more
+    @media (max-width: 1699px)
+      font-size: rem(14)
+
+    @media (max-width: 1500px)
+      font-size: rem(12)
+
+    &_articles
+      position: absolute
+      bottom: calc( 100% + 28px )
+      right: 0
+
+      @include xs
+        bottom: calc( 100% + 10px )
+        font-size: rem(10) !important
+        
+        .icon
+          width: rem(15)
+
+  .fz-30
+    @media (max-width: 1699px)
+      font-size: rem(24)
+
+    @media (max-width: 1500px)
+      font-size: rem(22)
+
+    @include lg
+      font-size: rem(20)
+
+    @include md
+      font-size: rem(18)
+
+    @include sm
+      font-size: rem(16)
+
+    @include xs
+      font-size: rem(14)
+
+  .fz-22
+    @media (max-width: 1699px)
+      font-size: rem(20)
+
+    @media (max-width: 1500px)
+      font-size: rem(18)
+
+    @include lg
+      font-size: rem(16)
+
+    @include md
+      font-size: rem(14)
+
+    @include sm
+      font-size: rem(12)
+
+    @include xs
+      font-size: rem(10)

@@ -1,0 +1,647 @@
+extends layouts/main
+
+block vars
+  - var description = '';
+  - var keywords= '';
+  - var ogtitle = '';
+  - var ogtype = '';
+  - var ogurl = '';
+  - var ogimg = '';
+
+block title
+  | main
+block main
+  .wrapper
+    .content
+      .hero(style="background-image: url('images/dist/hero.webp')")
+        include includes/header
+        
+        .container.hero__content 
+          .hero__text(data-aos="fade-down")
+            p.fz-20.text-uppercase.accent-color.semi-bold ИНДИВИДУАЛЬНО-ГРУППОВОЙ ОФФЛАЙН ТРЕНИНГ
+
+            h1.title.title_h1.title_light Твоя уверенная речь <br> за 6 занятий
+
+            p.fz-22.white-color Добивайтесь успеха в профессии и в жизни <br>
+              | с помощью яркого голоса, получайте кайф <br>
+              | от публичных выступлений
+
+            a.btn(href="#") Записаться на консультацию
+
+          .hero__bottom(data-aos="fade-up")
+
+            div
+              .counter-wrap 
+                .counter.white-color(data-count='2150') 
+                span.white-color + 
+
+              p.fz-18.semi-bold.text-uppercase.white-color успешных выпускников: <br>
+                | руководителей, спикеров, <br>
+                | публичных персон  
+
+            .hero__about
+              p.fz-24.text-uppercase.accent-color Ольга Ходакова <br> (Рогожникова) 
+              p.fz-18.text-uppercase.white-color педагог-новатор по технике речи <br> высшей квалификации
+      
+      .criterion
+        .container
+          .title.title_h1(data-aos="fade-down") Помогу обрести 
+            span уверенный
+            |, <br>
+            span энергичный 
+            | и 
+            span выносливый 
+            | голос, если вы:
+        
+        .swiper.criterion-js(data-aos="fade-up")
+          .swiper-wrapper
+            .swiper-slide
+              .criterion__item
+                .criterion__img 
+                  img(src="images/dist/criterion1.webp", alt="")  
+
+                .criterion__title Руководитель, <br> юрист, политик
+                .criterion__desc 
+                  p Вас 
+                    span не слушают
+                  p Испытываете 
+                    span страх 
+                    | перед <br> аудиторией  
+                  p 
+                    span Дрожь 
+                    | в голосе выдает волнение, <br> а выступления 
+                    span не зажигают  
+
+            .swiper-slide
+              .criterion__item
+                .criterion__img 
+                  img(src="images/dist/criterion2.webp", alt="")  
+
+                .criterion__title Тренер, публичная <br> персона, ведущий
+                .criterion__desc 
+                  p 
+                    span Теряете голос 
+                    | после выступлений
+
+                  p Говорите без 
+                    span эмоциональной 
+                    | окраски 
+                      
+                  p Возникают 
+                    span спазмы 
+                    | и 
+                    span зажатость
+                    |, <br> сбивается дыхание
+
+            .swiper-slide
+              .criterion__item
+                .criterion__img 
+                  img(src="images/dist/criterion3.webp", alt="")  
+
+                .criterion__title Регулярно ведете <br> переговоры
+                .criterion__desc 
+                  p 
+                    span Не хватает 
+                    | убедительности
+                  
+                  p Голос выдает 
+                    span волнение
+                      
+                  p 
+                    span Проигрываете 
+                    | оппоненту <br> в ораторских навыках
+
+            .swiper-slide
+              .criterion__item
+                .criterion__img 
+                  img(src="images/dist/criterion4.webp", alt="")  
+
+                .criterion__title Желаете <br> карьерного роста
+                .criterion__desc 
+                  p Не хватает 
+                    span  признания <br>
+                    | от руководства
+                  
+                  p Вы хотели бы 
+                    span усилить 
+                    | свое <br> 
+                    span влияние 
+                    | в коллективе
+                      
+                  p Необходимо 
+                    span успешно пройти <br>
+                    | собеседование
+
+            
+     
+      .requests(style="background-image: url('images/dist/requests.webp')")
+        .container 
+          .title.title_h1.title_light(data-aos="fade-down") Заговорите 
+            span ярче 
+            | и  
+            span увереннее <br>
+            | всего за несколько индивидуальных <br> 
+            |встреч с педагогом
+
+          p.fz-24.white-color(data-aos="fade-down") Работаем четко под ваш запрос:
+
+          .requests__wrap(data-aos="fade-up")
+            .requests__item 
+              .requests__col
+                p У меня тихий и дрожащий голос
+                
+
+              .requests__col 
+                p Уберем вялость речи
+
+            .requests__item 
+              .requests__col
+                p У меня слишком высокий голос
+                
+
+              .requests__col 
+                p Добавим мощности голосу
+
+            .requests__item 
+              .requests__col
+                p У меня усталый голос
+                
+
+              .requests__col 
+                p Снизим дрожание и повысим выносливость
+            
+            .requests__item 
+              .requests__col
+                p У меня боль в горле после выступления
+                
+
+              .requests__col 
+                p Избавимся от нехватки воздуха
+
+            .requests__item 
+              .requests__col
+                p Меня часто переспрашивают
+                
+
+              .requests__col 
+                p Сделаем речь четкой, внятной, чистой
+
+            .requests__item 
+              .requests__col
+                p У меня сбивчивая речь и невнятная дикция
+                
+
+              .requests__col 
+                p Вас будет приятно слушать
+            
+            .requests__item 
+              .requests__col
+                p У меня быстрый темп речи
+                
+
+              .requests__col 
+                p Снизим темп речи для лучшего восприятия
+
+      .group-course
+        .blur-elem 
+          svg(width='838' height='833' viewBox='0 0 838 833' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M419 0L447.973 284.694L590.236 36.3974L500.908 308.263L731.864 139.296L539.682 351.324L819.395 290.904L557.588 406.434L837.694 465.006L551.531 464.062L783.597 631.5L522.558 514.244L666.458 761.596L475.679 548.303L506.531 832.8L419 560.351L331.469 832.8L362.321 548.303L171.542 761.596L315.442 514.244L54.4033 631.5L286.469 464.062L0.306274 465.006L280.412 406.434L18.6052 290.904L298.318 351.324L106.136 139.296L337.092 308.263L247.764 36.3974L390.027 284.694L419 0Z' fill='#B77938' fill-opacity='0.2')
+ 
+        .container 
+          .title.title_h1.title_light(data-aos="fade-down") Курс групповых занятий
+          .title.title_h2.title_light(data-aos="fade-down") Программа курса по 
+            span технике речи 
+            | и  
+            span ораторскому искусству
+
+          .group-course__wrap(data-aos="fade-up")
+            mixin group-course(item, modify)
+              if modify  
+                .group-course__item(class="group-course__item_"+modify)!=item
+              else
+                .group-course__item!=item
+
+            +group-course('Техники работы с сильным волнением и страхом <br> через актёрские и телесные практики.')
+
+            .group-course__item Работа над чёткостью речи и развитием интонаций.
+              ol 
+                li Выработка навыка взаимодействия через речь с аудиторией
+                li Развитие сильного, уверенного и свободного голоса.
+
+            +group-course('Учимся использовать и совмещать голос, дикцию вместе <br> с интонацией.')
+            +group-course('Правила логики речи – умение понятно и четко формулировать.')
+            +group-course('Внедряем в выступлении 4 главных закона уверенного оратора.', 'border-none')
+            +group-course('Импровизация. Упражнения от «стопора» и решение задачи <br> «чистой речь без слов паразитов».')
+            +group-course('Правила и техники подготовки выступления.')
+            +group-course('Навыки сторителйлинга – говори заразительно!')
+            +group-course('Зачёт и выдача сертификата. «Ваше яркое публичное выступление».')
+
+            .group-course__img 
+              img(src="images/dist/mic.webp", alt="")
+      
+      .problem 
+        .container 
+          .title.title_h2(data-aos="fade-down") Проблемы, которые  
+            span решает 
+            | наш курс
+          .problem__flex-wrap(data-aos="fade-up")
+            
+            mixin problem(item)
+              .problem__item!=item
+            +problem('Избавитесь от страха выступлений <br> и полюбите в себе оратора')
+            +problem('Обретёте свободу слова во время <br> выступлений и общения')
+            +problem('Научитесь легко входить <br> в контакт с людьми')
+            +problem('Откроете свою индивидуальность <br> во время выступления и общения')
+            +problem('Узнаете, как готовить себя <br> к выступлению')
+            +problem('Научитесь понятно доносить <br> информацию с помощью логики речи')
+            +problem('Избавитесь от комплексов <br> и надуманных страхов')
+            +problem('Обретёте увереный, влиятельный <br> и свободный голос')
+            +problem('Сможете продавать свои знания, <br> услуги, товары дороже')
+  
+      .course-desc(style="background-image: url('/images/dist/course-desc.webp')") 
+        .blur-elem 
+          svg(width='838' height='833' viewBox='0 0 838 833' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M419 0L447.973 284.694L590.236 36.3974L500.908 308.263L731.864 139.296L539.682 351.324L819.395 290.904L557.588 406.434L837.694 465.006L551.531 464.062L783.597 631.5L522.558 514.244L666.458 761.596L475.679 548.303L506.531 832.8L419 560.351L331.469 832.8L362.321 548.303L171.542 761.596L315.442 514.244L54.4033 631.5L286.469 464.062L0.306274 465.006L280.412 406.434L18.6052 290.904L298.318 351.324L106.136 139.296L337.092 308.263L247.764 36.3974L390.027 284.694L419 0Z' fill='#B77938' fill-opacity='0.2')
+ 
+        .container(data-aos="fade-down")
+          .course-desc__flex-wrap 
+            .course-desc__col
+              .course-desc__col-flex-bock
+
+                .course-desc__item
+                  div
+                    p.fz-34.white-color 2 группы на выбор
+                  div
+                    p.fz-26.semi-bold.accent-color.text-uppercase 2 раза в неделю по будням (9 занятий по 2 часа) 
+                    p.fz-22.white-color работаем в щадящем режиме после трудового дня
+                  div
+                    p.fz-24.semi-bold.white-color ПН, ЧТ 19:00-21:00
+                    p.fz-20.white-color с доступом к видеозаписям
+                .course-desc__item
+                  div
+                    p.fz-26.semi-bold.accent-color.text-uppercase раз в неделю в выходной или будни раз в неделю днём (6 занятий по 3 часа) 
+                    p.fz-22.white-color работаем в интенсивном режиме со свежими силами
+                  div
+                    p.fz-24.semi-bold.white-color СБ 13:00-15:30
+                    p.fz-20.white-color с доступом к видеозаписям
+
+              .course-desc__col-flex-bock
+                p.fz-26.semi-bold.white-color.text-uppercase Старт занятий 
+                ul.between
+                  li 
+                    span.fz-24.white-color Основная группа
+                    span.fz-26.semi-bold.accent-color 21.07.2023
+                  li 
+                    span.fz-24.white-color Группа выходного дня
+                    span.fz-26.semi-bold.accent-color 25.07.2023
+                br
+                br
+                br
+                br
+                ul.between 
+                  li
+                    span.fz-24.white-color Адрес
+                    span.fz-20.semi-bold.white-color.text-uppercase Садовническая улица, 54, стр. 1 
+
+            .course-desc__col
+              div
+                p.fz-34.white-color В чем уникальность курса?
+              ul
+                each li in ['вы получите <span>благоприятную атмосферу</span> для роста <br> в публичных выступлениях','<span>индивидуальный подход</span> к каждому ученику','взаимодействие с единомышленниками и <span>мощный рост</span> в выступлениях','обретёте <span>опытного наставника</span> по ораторскому мастерству и технике <br> речи'] 
+                  li!=li 
+
+              p.fz-20.accent-color.text-uppercase а так же вас ждёт:
+
+              ul 
+                each li in ['видео с домашней работой в чате для тренировки упражнений <br> между занятиями','месяц поддержки для проверки динамики вашего роста после занятий <br> по видео и аудио','видео уроки для самостоятельного поддержания голоса и речи']
+                  li!=li
+              
+              .course-desc__item
+                p.fz-26.semi-bold.accent-color.text-uppercase Тариф “Практика”
+
+                br
+
+                ul.between 
+                  li
+                    span.fz-24.white-color Купи сейчас за
+                    span.fz-20.semi-bold.white-color.text-uppercase 20 900 ₽ 
+                  li
+                    span.fz-24.white-color За 2 дня до начала курса
+                    span.fz-20.semi-bold.white-color.text-uppercase 25 900 ₽ 
+
+
+             
+              .course-desc__item
+                p.fz-26.semi-bold.accent-color.text-uppercase Тариф “VIP”
+                br
+                ul.between 
+                  li
+                    span.fz-22.white-color С индивидуальной офлайн или онлайн консультацией
+                    span.fz-20.semi-bold.accent-color осталось 5 мест
+                  
+                  li
+                    span.fz-24.white-color Купи сейчас за
+                    span.fz-20.semi-bold.white-color.text-uppercase 28 900 ₽
+                  li
+                    span.fz-24.white-color За 2 дня до начала курса
+                    span.fz-20.semi-bold.white-color.text-uppercase 33 900 ₽
+              a.btn(href="#") Записаться на курс 
+
+      .about 
+        .about__flex-container 
+          .about__flex-item(data-aos="fade-left")
+            .about__title.title.title_h1 О студии имиджа речи <br> 
+              span Ольги Ходаковой 
+
+          .about__flex-item(data-aos="fade-down")
+            .about__img 
+              img(src="images/dist/about.webp", alt="")
+
+              .about__additional(data-aos="fade-down")
+                p Чтобы создать свою методику, я училась <br> 
+                  span 20 лет 
+                  | в известных школах у признанных <br> мастеров
+
+          .about__flex-item(data-aos="fade-up")
+            
+            div
+              p.fz-20.semi-bold.accent-color.text-uppercase Здравствуйте, меня зовут
+              .title.title_h1 Ольга Ходакова
+                .about__img-bg 
+                  img(src="images/dist/about2.webp", alt="")
+              p.fz-26.semi-bold.text-uppercase 17 лет обучаю говорить так, чтобы вас хотелосьслушать и согласиться 
+
+              .about__desc
+                .about__desc-col
+                  p.fz-22 Эксперт по технике речи. <br> За 5-7 занятий решаю проблемы, <br> которые мешают годами
+                .about__desc-col
+                  p.fz-22 Мастер публичных выступлений. <br> Убираю страхи и превращаю <br> выступления в драйв
+                  button.btn.about-js(href="#") Подробнее обо мне
+
+            .about__certificates
+
+              .swiper.certificates-js
+                .swiper-wrapper.about__certificates-wrap
+                  each certificate in [1,2,3,4,5] 
+                    .swiper-slide
+                      
+                      a(href='images/dist/certificate'+certificate+'.webp' data-fancybox='certificates' data-caption='Caption #1')
+                        img(src='images/dist/certificate'+certificate+'.webp')
+                        
+                        .icon 
+                          svg(width='25' height='25' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M17.8 16.8795L12.8837 11.9632C14.0651 10.5449 14.6543 8.72575 14.5286 6.88414C14.4029 5.04253 13.572 3.32029 12.2088 2.07568C10.8456 0.831067 9.0551 0.159918 7.20968 0.20185C5.36427 0.243781 3.60606 0.995564 2.30082 2.30081C0.995579 3.60605 0.243796 5.36425 0.201865 7.20967C0.159934 9.05508 0.831082 10.8456 2.07569 12.2088C3.3203 13.572 5.04255 14.4028 6.88416 14.5286C8.72576 14.6543 10.5449 14.0651 11.9632 12.8837L16.8795 17.8L17.8 16.8795ZM1.52527 7.38416C1.52527 6.22538 1.86889 5.09262 2.51268 4.12913C3.15646 3.16564 4.0715 2.41469 5.14207 1.97124C6.21265 1.52779 7.39068 1.41177 8.52719 1.63783C9.66371 1.8639 10.7077 2.42191 11.5271 3.24129C12.3464 4.06067 12.9044 5.10463 13.1305 6.24115C13.3566 7.37766 13.2406 8.55569 12.7971 9.62627C12.3537 10.6968 11.6027 11.6119 10.6392 12.2557C9.67572 12.8995 8.54296 13.2431 7.38418 13.2431C5.83083 13.2413 4.34159 12.6235 3.24321 11.5251C2.14482 10.4267 1.52699 8.93751 1.52527 7.38416Z' fill='white')
+
+
+             
+              a.fz-18.semi-bold.gallery-certificates(href='images/dist/certificate5.webp' data-fancybox='certificates') Нажмите <br> для просмотра
+    
+      .callback(style="background-image: url('images/dist/callback.webp')") 
+        .container
+          .callback__flex-wrap 
+            .callback__flex-col(data-aos="fade-right")
+              .title.title_h1.title_light Запишитесь <br> на бесплатную <br> консультацию
+              p.fz-24.white-color чтобы узнать, какие результаты всего <br> за 1 занятие получите именно вы
+            .callback__flex-col(data-aos="fade-left") 
+              p.fz-20.white-color.semi-bold.text-uppercase Оставьте ваш номер телефона и мы вам перезвоним в течение 1 часа
+              
+              .callback__input 
+                input#phone(type='text' placeholder="+ 7 (_ _ _) _ _ _ - _ _ - _ _")
+
+              p.fz-18.white-color Нажимая на кнопку, вы соглашаетесь с  
+                a.white-color.semi-bold(href="#") условиями Политики конфиденциальности
+
+              a.btn(href="#") Записаться на консультацию
+      
+      .advantages 
+        .container
+          .title.title_h1.title_light(data-aos="fade-up") Почему я гарантирую <br> 
+            span результат?
+
+          .advantages__flex-wrap
+            .advantages__flex-col(data-aos="fade-up")
+              .advantages__desc-wrap
+                .advantages__desc-col
+                  p.fz-22 Даю только эффективные упражнения, наработанные за 17 лет практики
+                .advantages__desc-col
+                  p.fz-22 Применяю разнообразные методики фундаментальных школ ораторства и речи
+              br
+              br
+              p.fz-22.white-color Посмотрите мое удостоверение о повышении квалификации
+              br
+              p.fz-26.semi-bold.text-uppercase.accent-color по программе «Методика преподавания <br> сценической речи» в 2022 г. в Театральном <br> институте им. Б. Щукина
+              br
+              br
+              br
+              p.fz-22.white-color В настоящее время прохожу обучение в Театральном институте <br> им. Б. Щукина по программе «Мастерство искусства речи» , <br> художественный руководитель А.М. Бруссер
+            
+            .advantages__flex-col(data-aos="fade-down")
+              .advantages__frame 
+                img(src="images/dist/frame.webp", alt="")
+                .advantages__img
+                  img(src="#", alt="")
+
+                .blur-elem 
+                  svg(width='838' height='833' viewBox='0 0 838 833' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M419 0L447.973 284.694L590.236 36.3974L500.908 308.263L731.864 139.296L539.682 351.324L819.395 290.904L557.588 406.434L837.694 465.006L551.531 464.062L783.597 631.5L522.558 514.244L666.458 761.596L475.679 548.303L506.531 832.8L419 560.351L331.469 832.8L362.321 548.303L171.542 761.596L315.442 514.244L54.4033 631.5L286.469 464.062L0.306274 465.006L280.412 406.434L18.6052 290.904L298.318 351.324L106.136 139.296L337.092 308.263L247.764 36.3974L390.027 284.694L419 0Z' fill='#B77938' fill-opacity='0.2')
+            
+                .blur-elem 
+                  svg(width='838' height='833' viewBox='0 0 838 833' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M419 0L447.973 284.694L590.236 36.3974L500.908 308.263L731.864 139.296L539.682 351.324L819.395 290.904L557.588 406.434L837.694 465.006L551.531 464.062L783.597 631.5L522.558 514.244L666.458 761.596L475.679 548.303L506.531 832.8L419 560.351L331.469 832.8L362.321 548.303L171.542 761.596L315.442 514.244L54.4033 631.5L286.469 464.062L0.306274 465.006L280.412 406.434L18.6052 290.904L298.318 351.324L106.136 139.296L337.092 308.263L247.764 36.3974L390.027 284.694L419 0Z' fill='#B77938' fill-opacity='0.2')
+
+      .clients
+        .container
+          .title.title_h1(data-aos="fade-down") Наши клиенты     
+          
+          .clients__flex-wrap(data-aos="fade-up")
+            .clients__flex-item.clients__flex-item_count
+              .counter-wrap 
+                .counter.accent-color(data-count='2150') 
+                span.accent-color + 
+              p.fz-18.semi-bold.text-uppercase.secondary-color клиентов обрели <br> красивый голос и четкую речь
+            .clients__flex-item.clients__flex-item_count
+              .counter-wrap 
+                .counter.accent-color(data-count='6340') 
+                span.accent-color + 
+              p.fz-18.semi-bold.text-uppercase.secondary-color часов работы над уверенной <br> речью учеников
+            
+            .clients__flex-item.clients__flex-item_count
+              .counter-wrap 
+                .counter.accent-color(data-count='25') 
+                span.accent-color + 
+              p.fz-18.semi-bold.text-uppercase.secondary-color компаний доверили мне <br> ораторское мастерство <br> своих сотрудников
+            
+            each client in [1,2,3,4,5,6,7,8,9]
+              .clients__flex-item
+                .clients__img 
+                  img(src="images/dist/client"+client+".webp", alt="")
+
+      .reviews(data-aos="fade-down")
+        .container
+          .swiper.reviews-js
+            .swiper-wrapper
+              .swiper-slide
+                .reviews__slide
+                  .reviews__reviewer
+                    .reviews__reviewer-img
+                      img(src="images/dist/reviewer1.webp", alt="")
+                    .reviews__reviewer-name 
+                      p.fz-26.accent-color.semi-bold.text-uppercase Анна Отке1
+                      p.fz-20.semi-bold Сенатор Российской <br> Федерации
+                  .reviews__text 
+                    .title.title_h1 Результаты занятий <br> меняют жизнь к лучшему
+                      //- a.more.semi-bold.text-uppercase(href="#")  ВСЕ ОТЗЫВЫ
+                      //-   .icon 
+                      //-     svg(width='20' height='15' viewBox='0 0 20 15' fill='none' xmlns='http://www.w3.org/2000/svg')
+                      //-       path(d='M1 7.5H18M18 7.5L11.625 14M18 7.5L11.625 1' stroke='#9E9E9E' stroke-width='1.6' stroke-linecap='round')
+                    
+                    p.fz-30.accent-color «Я за одни сутки с краткими перерывами выступала13 часов. Разные темы, разная аудитория.Голос не «треснул», «не сел», звучал ровно, я не усталаи получала удовольствие»
+
+                    p.fz-22 Ольга, здравствуйте! Делюсь с Вами своими достижениями.Я за одни сутки с краткими перерывами выступала 13 часов. Разные темы,разная аудитория. Голос не «треснул», «не сел», звучал ровно, я не устала и получалаудовольствие. Раньше 15 минут выступления заканчивались потерей голосана неделю.
+              .swiper-slide
+                .reviews__slide
+                  .reviews__reviewer
+                    .reviews__reviewer-img
+                      img(src="images/dist/reviewer1.webp", alt="")
+                    .reviews__reviewer-name 
+                      p.fz-26.accent-color.semi-bold.text-uppercase Анна Отке2
+                      p.fz-20.semi-bold Сенатор Российской <br> Федерации
+                  .reviews__text 
+                    .title.title_h1 Результаты занятий <br> меняют жизнь к лучшему
+
+                    p.fz-30.accent-color «Я за одни сутки с краткими перерывами выступала13 часов. Разные темы, разная аудитория.Голос не «треснул», «не сел», звучал ровно, я не усталаи получала удовольствие»
+
+                    p.fz-22 Ольга, здравствуйте! Делюсь с Вами своими достижениями.Я за одни сутки с краткими перерывами выступала 13 часов. Разные темы,разная аудитория. Голос не «треснул», «не сел», звучал ровно, я не устала и получалаудовольствие. Раньше 15 минут выступления заканчивались потерей голосана неделю.
+              .swiper-slide
+                .reviews__slide
+                  .reviews__reviewer
+                    .reviews__reviewer-img
+                      img(src="images/dist/reviewer1.webp", alt="")
+                    .reviews__reviewer-name 
+                      p.fz-26.accent-color.semi-bold.text-uppercase Анна Отке3
+                      p.fz-20.semi-bold Сенатор Российской <br> Федерации
+                  .reviews__text 
+                    .title.title_h1 Результаты занятий <br> меняют жизнь к лучшему
+
+                    p.fz-30.accent-color «Я за одни сутки с краткими перерывами выступала13 часов. Разные темы, разная аудитория.Голос не «треснул», «не сел», звучал ровно, я не усталаи получала удовольствие»
+
+                    p.fz-22 Ольга, здравствуйте! Делюсь с Вами своими достижениями.Я за одни сутки с краткими перерывами выступала 13 часов. Разные темы,разная аудитория. Голос не «треснул», «не сел», звучал ровно, я не устала и получалаудовольствие. Раньше 15 минут выступления заканчивались потерей голосана неделю.
+
+            
+          .reviews__nav
+            .reviews__nav-btn.reviews__nav-btn_prev
+              svg(width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M42 30L18 30M18 30L27 20.4M18 30L27 39.6' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
+
+            .reviews__nav-btn.reviews__nav-btn_next
+              svg(width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M18 30L42 30M42 30L33 39.6M42 30L33 20.4' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')
+
+    
+      .blog
+        .container(data-aos="fade-down")
+          .title.title_h1.title_light Наш блог
+          p.fz-24.white-color Здесь находятся все последние новости и статьи 
+
+          .blog__flex-wrap
+            .blog__flex-col
+              .blur-elem 
+                svg(width='838' height='833' viewBox='0 0 838 833' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  path(d='M419 0L447.973 284.694L590.236 36.3974L500.908 308.263L731.864 139.296L539.682 351.324L819.395 290.904L557.588 406.434L837.694 465.006L551.531 464.062L783.597 631.5L522.558 514.244L666.458 761.596L475.679 548.303L506.531 832.8L419 560.351L331.469 832.8L362.321 548.303L171.542 761.596L315.442 514.244L54.4033 631.5L286.469 464.062L0.306274 465.006L280.412 406.434L18.6052 290.904L298.318 351.324L106.136 139.296L337.092 308.263L247.764 36.3974L390.027 284.694L419 0Z' fill='#B77938' fill-opacity='0.2')
+      
+              .blog__article.blog__article_main 
+                .blog__img 
+                  img(src="images/dist/blog1.webp", alt="")
+                .blog__title.fz-30.white-color 5 фраз, которые выдают вашу неграмотность
+                .blog__date.fz-20.accent-color.semi-bold 07.03.2023
+                .blog__annotation.fz-22.white-color Есть целый ряд фразеологизмов, которые часто путают. Например: оказать помощь и приносить пользу, одерживать победу и завоевывать медаль, расширять кругозор и повышать уровень. И определенный чемпион по злоупотреблению — пара «не играет роли» и «не имеет значения». Они могут существовать только в таких вари...
+
+                a.more.semi-bold.text-uppercase(href="#") Читать далее
+                  .icon 
+                    svg(width='20' height='15' viewBox='0 0 20 15' fill='none' xmlns='http://www.w3.org/2000/svg')
+                      path(d='M1 7.5H18M18 7.5L11.625 14M18 7.5L11.625 1' stroke='#9E9E9E' stroke-width='1.6' stroke-linecap='round')
+            
+            .blog__flex-col
+              
+              each article in [2,3,4,5]
+                .blog__article
+                  .blog__article-col
+                    .blog__img 
+                      img(src="images/dist/blog"+article+".webp", alt="") 
+                  .blog__article-col
+                    .blog__date.fz-20.accent-color.semi-bold 07.03.2023
+
+                    .blog__annotation
+                      p.fz-30.white-color Как развить харизму: <br> 3 проверенных способа 
+                      a.more.semi-bold.text-uppercase(href="#") Читать далее
+                        .icon 
+                          svg(width='20' height='15' viewBox='0 0 20 15' fill='none' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M1 7.5H18M18 7.5L11.625 14M18 7.5L11.625 1' stroke='#9E9E9E' stroke-width='1.6' stroke-linecap='round')
+
+              .blur-elem 
+                svg(width='838' height='833' viewBox='0 0 838 833' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  path(d='M419 0L447.973 284.694L590.236 36.3974L500.908 308.263L731.864 139.296L539.682 351.324L819.395 290.904L557.588 406.434L837.694 465.006L551.531 464.062L783.597 631.5L522.558 514.244L666.458 761.596L475.679 548.303L506.531 832.8L419 560.351L331.469 832.8L362.321 548.303L171.542 761.596L315.442 514.244L54.4033 631.5L286.469 464.062L0.306274 465.006L280.412 406.434L18.6052 290.904L298.318 351.324L106.136 139.296L337.092 308.263L247.764 36.3974L390.027 284.694L419 0Z' fill='#B77938' fill-opacity='0.2')
+      
+
+            a.more.more_articles.semi-bold.text-uppercase.white-color(href="#") Все статьи
+              .icon 
+                svg(width='20' height='15' viewBox='0 0 20 15' fill='none' xmlns='http://www.w3.org/2000/svg')
+                  path(d='M1 7.5H18M18 7.5L11.625 14M18 7.5L11.625 1' stroke='#fff' stroke-width='1.6' stroke-linecap='round')
+            
+      .media(style="background-image: url('images/dist/media.webp')")
+        .container
+          .title.title_h1.title_light(data-aos="fade-right") Мы в социальных медиа
+          
+        .media__img 
+          img(src="images/dist/media2.webp", alt="" data-aos="fade-up") 
+
+          .media__text
+            .media__text-item(data-aos="fade-right") 
+              p.fz-20.semi-bold.white-color.text-uppercase Следите за нами <br> и нашими обновлениями <br> 
+                span.accent-color.semi-bold в группе ВК 
+              a.more.fz-20.semi-bold.text-uppercase.white-color(href="#") Перейти
+                .icon 
+                  svg(width='20' height='15' viewBox='0 0 20 15' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M1 7.5H18M18 7.5L11.625 14M18 7.5L11.625 1' stroke='#9E9E9E' stroke-width='1.6' stroke-linecap='round')
+
+            .media__text-item(data-aos="fade-left") 
+              p.fz-20.semi-bold.white-color.text-uppercase Узнайте больше техник <br> уверенной речи и ярких <br> выступлений 
+                span.accent-color.semi-bold в моем ТГ-канале
+              a.more.fz-20.semi-bold.text-uppercase.white-color(href="#") Перейти
+                .icon 
+                  svg(width='20' height='15' viewBox='0 0 20 15' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M1 7.5H18M18 7.5L11.625 14M18 7.5L11.625 1' stroke='#9E9E9E' stroke-width='1.6' stroke-linecap='round')
+
+  .popup#about-js 
+    .popup__window
+      .popup__close 
+        svg(width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg')
+          path(d='M20.6428 1.35712L1.35709 20.6428M1.35709 1.35712L20.6428 20.6428' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+      
+      .popup__img
+        img(src="images/dist/about3.webp", alt="") 
+
+      .popup__title.fz-26.semi-bold.text-uppercase Работаю по авторской методике на базе фундаментальных знанийВ основе методики не двухнедельные курсы по ораторскомумастерству, а полноценные 5 лет в государственных ВУЗах.
+      .popup__subtitle.fz-20.semi-bold.accent-color.text-uppercase Основное образование
+
+      ul 
+        li Московский социально-гуманитарный институт. Специальность: логопед-фонопед. 
+        li Высшее театральное училище им. Б.Щукина.Факультет: Актерский, кафедра сценической речи.Специальность: «Педагог высшей категории по сценической речи» 
+        li Экономико-гуманитарный институт. Факультет: «Экранная культура».Специальность: «Продюсер кино, телевидения и театра» 
+      
+      .popup__subtitle.fz-20.semi-bold.accent-color.text-uppercase дополнительное образование
+
+      ul
+        li Удостоверение о повышении квалификации: «Голос и речь в свете междисциплинарныхаспектов», 16 часов
+        li Удостоверение о повышении квалификации: «Избранные вопросы фониологии:Междисциплинарные теоретико-методологические проблемы вокально-речевойпедагогики», 19 часов
+      
+      .popup__title.fz-26.semi-bold.text-uppercase За 17 лет я помогла более 2 000 клиентов обрести красивый голоси четкую речь
+      
+      ul
+        li Тренинги для представителей гос. структур и правительства: Министерство природныхресурсов, Администрация Президента, Общественная палата РФ
+        li Тренинги для крупных компаний: «Гарант+», ПАО «Аэрофлот», банк «УралСиб»,mail.ru, банк «ВТБ», и др.
+        li Индивидуальные занятия для экспертов: юристы, адвокаты, врачи, журналисты,ведущие новостей и др.
+    
+  include includes/footer 
+  
+  include includes/scripts 

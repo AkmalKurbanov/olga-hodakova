@@ -1,0 +1,102 @@
+.hero
+  padding: rem(45) 0 rem(60)
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+  @include xs
+    padding: rem(25) 0 rem(40)
+    background-position: 60% 50%
+
+  .container
+    @include sm
+      max-width: 100%
+
+  &__content
+    min-height: calc( 100vh - 149px )
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    padding-top: rem(40)
+    padding-bottom: rem(40)
+
+    @include lg
+      padding-top: rem(30)
+      padding-bottom: rem(30)
+
+    @include md
+      padding-top: rem(20)
+      padding-bottom: rem(20)
+
+    @include sm
+      padding-bottom: 0
+
+    .title
+      margin: rem(40) 0
+
+    .btn
+      margin-top: rem(40)
+
+  &__text
+    margin-bottom: rem(135)
+
+    @include lg
+      margin-bottom: rem(100)
+
+    @include md
+      margin-bottom: rem(80)
+
+    @include sm
+      margin-bottom: rem(50)
+
+    @include xs
+      margin-bottom: rem(30)
+
+    .fz-22
+      @include sm
+        font-size: rem(18)
+        
+      @include xs
+        br
+          display: none
+
+  &__bottom
+    @include aife-jfcsb
+
+    @include sm
+      flex-direction: column
+      align-items: flex-start
+
+  &__about
+    background: #242A34
+    border-radius: rem(6)
+    padding: rem(25) rem(30)
+    display: inline-block
+
+    @include md
+      padding: rem(15) rem(20)
+
+    @include sm
+      margin-top: rem(20)
+
+    p
+      margin-bottom: rem(15)
+
+      @include md
+        margin-bottom: rem(7)
+
+      &.fz-24
+        @include md
+          font-size: rem(20)
+
+      &.fz-18
+        @include md
+          font-size: rem(14)
+
+      &:last-child
+        margin-bottom: 0
+
+  .counter-wrap
+    @include md
+      font-size: rem(40)
+      line-height: rem(40)

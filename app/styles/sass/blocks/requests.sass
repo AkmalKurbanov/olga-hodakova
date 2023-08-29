@@ -1,0 +1,103 @@
+.requests
+  padding: rem(150) 0
+  background-attachment: fixed
+  background-size: cover
+  background-position: center
+
+  @media (max-width: 1699px)
+    padding: rem(120) 0
+
+  @media (max-width: 1500px)
+    padding: rem(100) 0
+
+  @include lg  
+    padding: rem(80) 0
+
+  @include md  
+    padding: rem(60) 0
+
+  @include sm  
+    padding: rem(35) 0
+
+  .title
+    margin-bottom: rem(30)
+
+  &__wrap
+    margin-top: rem(50)
+
+  &__col
+    width: 50%
+    position: relative
+
+    &:first-child
+      p
+        padding-right: rem(200)
+        color: #CACACA
+
+        @media (max-width: 1699px)
+          padding-right: rem(100)
+        
+        @include md  
+          padding-right: rem(50)
+
+        @include xs
+          padding-right: rem(25)
+
+
+      &:after
+        position: absolute
+        content: ''
+        background-image: url('/images/dist/arrow.svg')
+        background-size: contain
+        background-position: center
+        width: rem(40)
+        height: rem(40)
+        right: rem(150)
+        top: 50%
+        transform: translateY(-50%)
+
+        @media (max-width: 1699px)
+          right: rem(60)
+
+        @include lg
+          width: rem(30)
+          height: rem(30)
+
+        @include md  
+          width: rem(20)
+          height: rem(20)
+          right: rem(30)
+
+        @include xs  
+          width: rem(15)
+          height: rem(15)
+          right: rem(10)
+
+
+    &:last-child
+      p
+        font-weight: 600
+        color: $white
+
+  &__item
+    padding: rem(20) 0
+    border-top: rem(1) solid #9E9E9E
+    @include aic-jfcsb
+    font-size: rem(30)
+
+    @media (max-width: 1699px)
+      font-size: rem(25)
+
+    @media (max-width: 1500px)
+      font-size: rem(20)
+
+    @include lg
+      font-size: rem(16)
+      padding: rem(15) 0
+
+    @include xs
+      font-size: rem(11)
+      padding: rem(15) 0
+
+    &:last-child
+      border-bottom: rem(1) solid #9E9E9E

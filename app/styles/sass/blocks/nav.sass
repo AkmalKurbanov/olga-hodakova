@@ -1,0 +1,60 @@
+.nav
+  ul
+    li
+      position: relative
+      @include aic-jcc
+      cursor: pointer
+
+      a
+        color: $white
+        text-transform: uppercase
+        font-size: rem(16)
+        font-weight: 600
+        transition: $transition
+        text-decoration: none
+
+        &:hover
+          color: $accent
+
+      .icon
+        transition: $transition
+        margin-left: rem(4)
+        @include aic-jcc
+        position: absolute
+        left: 100%
+        top: 50%
+        transform: translateY(-50%)
+
+        svg
+          path
+            transition: $transition
+      ul
+        position: absolute
+        opacity: 0
+        pointer-events: none
+        left: 0
+        top: 100%
+        transition: $transition
+        flex-direction: column
+        align-items: flex-start
+        padding: 0
+        padding-top: rem(10)
+        margin: 0
+        min-width: rem(240)
+        z-index: 2
+        
+        li
+          margin: 0
+
+      &:hover
+        .icon
+          transform: translateY(-50%) rotate(180deg)
+          svg
+            path
+              fill: $accent
+
+        ul
+          opacity: 1
+          pointer-events: inherit
+
+

@@ -1,0 +1,178 @@
+.footer
+	flex: 0 0 auto
+	background: #121B25
+	padding: rem(85) 0
+
+	@include lg
+		padding: rem(65) 0
+
+	@include md
+		padding: rem(45) 0
+
+	.container
+		@include lg
+			max-width: 100%
+		
+		@include md
+			max-width: rem(720)
+
+	&__flex-wrap
+		display: flex
+
+		@include md
+			flex-wrap: wrap
+			justify-content: space-between
+
+
+	&__flex-col
+		width: 100%
+		@include fdc-jfcsb
+
+
+		&:first-child
+			@include md
+				order: 2
+				display: flex !important
+				width: calc( 50% - 15px )
+
+			@include xs		
+				width: 100%
+
+
+		&:nth-child(2)
+			width: 100%
+			max-width: rem(800)
+			min-width: rem(800)
+			margin: 0 rem(50)
+
+			@media (max-width: 1699px)
+				margin: 0 rem(25)
+				max-width: rem(600)
+				min-width: rem(600)
+
+			@include lg
+				max-width: rem(400)
+				min-width: rem(400)
+
+			@include md
+				order: 1
+				margin: 0
+				max-width: 100%
+				min-width: 100%
+				margin-bottom: rem(30)
+			
+			.logo
+				margin-bottom: rem(30)
+				margin-top: 0
+				font-size: rem(20)
+		&:last-child
+			@include md
+				order: 3
+				width: calc( 50% - 15px )
+
+			@include xs		
+				width: 100%	
+
+	&__logo
+		display: block		
+		margin-bottom: rem(55)
+		
+		@include md
+			display: none
+
+		&:hover
+			color: $white!important
+
+
+	.social
+		margin-top: rem(20)				
+		margin-bottom: rem(30)
+		li
+			margin-right: rem(20)
+			a
+				.icon
+					width: rem(35)
+					height: rem(35)
+					svg
+						width: 100%
+
+	&__address
+		margin-top: rem(15)
+		margin-bottom: rem(35)
+
+		@media (max-width: 1699px)
+			font-size: rem(20)
+
+		@media (max-width: 1500px)
+			font-size: rem(18)
+
+	&__map
+		filter: grayscale(1)
+		min-height: rem(510)
+		width: 100%
+		position: relative
+		transition: $transition
+
+		@media (max-width: 1699px)
+			min-height: rem(400)
+
+
+		&:hover
+			filter: grayscale(0)
+
+		iframe
+			width: 100%
+			height: 100%
+			position: absolute !important
+
+	.contacts
+		@include md
+			margin-top: rem(30)
+
+		&__phone
+			color: $accent
+			font-size: rem(40)
+			
+			@media (max-width: 1699px)
+				font-size: rem(30)
+
+			@media (max-width: 1500px)
+				font-size: rem(25)
+
+			&:hover
+				color: $white
+
+	a
+		text-decoration: none
+		&:hover
+			color: $accent
+
+	&__nav
+		ul
+			padding: 0
+			columns: 2
+			column-gap: rem(10)
+
+			li
+				justify-content: flex-start!important
+				margin-bottom: rem(40)
+				a
+					font-size: rem(16)
+					white-space: nowrap
+
+	.fz-20
+		@media (max-width: 1699px)
+			font-size: rem(18)					
+		
+		@media (max-width: 1500px)
+			font-size: rem(16)					
+
+	.xs-hide
+		@include xs
+			display: none		
+	
+	.xs-show
+		display: none
+		@include xs
+			display: block	
+			margin-top: rem(10)	

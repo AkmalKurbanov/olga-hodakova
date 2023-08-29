@@ -1,0 +1,152 @@
+.header
+  &__flex-wrap 
+    @include aic-jfcsb
+    @include md
+      align-items: flex-start
+  &__flex-col
+    &:last-child
+      @include aic-jcc
+      
+      @include md
+        align-items: flex-start
+
+      @include sm
+        align-items: center
+
+  &__logo    
+    white-space: nowrap
+
+  &__nav
+    margin-right: rem(70)
+
+    @media (max-width: 1699px)
+      margin-right: rem(30)
+
+
+    ul
+      @include aic-jcc
+      
+      li
+        margin-right: rem(70)
+
+        @media (max-width: 1699px)
+          margin-right: rem(30)
+
+        
+        &:last-child
+          margin-right: 0
+
+  .contacts
+    @include aic-jcc
+    margin-right: rem(40)
+
+    @include md
+      flex-wrap: wrap
+      justify-content: flex-end
+      margin-right: rem(25)
+
+    @include xs
+      margin-right: rem(15)  
+
+    &__phone
+      color: $white
+      margin-right: rem(50)
+      font-size: rem(24)
+      
+      @media (max-width: 1699px)
+        font-size: rem(20)
+      
+      @include md
+        margin-right: 0
+      
+      &:hover
+        color: $accent
+
+      .icon
+        display: none
+        @include md
+          @include aic-jcc
+
+      span
+        @include md
+          display: none
+
+
+
+
+    &__street
+      @include md
+        margin-top: rem(10)
+        width: 100%
+        text-align: right
+        
+        br
+          display: none
+
+      @include sm
+        display: none
+      
+    .social     
+      margin-right: rem(15) 
+
+      @include xs
+        margin-right: 0
+
+      ul
+        li
+          @include xs
+            margin-right: rem(6)
+
+          
+
+
+  .search
+    position: relative
+    
+    .icon
+      width: 100%
+      max-width: rem(40)
+      min-width: rem(40)
+      height: rem(40)
+      @include aic-jcc
+      border-radius: 100%
+      background: $accent
+      position: relative
+      z-index: 1
+      cursor: pointer
+
+
+    &__input  
+      width: 100%
+      max-width: rem(430)
+      min-width: rem(430)
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      transition: all ease .3s
+      right: rem(20)
+      opacity: 0
+      pointer-events: none
+
+      @include xs
+        max-width: rem(325)
+        min-width: rem(325)
+
+      input
+        border-radius: rem(190) 0 0 rem(190)
+        background: $white
+        height: rem(39)
+        width: 100%
+        border: none
+        outline: none
+        font-size: rem(20)
+        transition: $transition
+        padding-left: rem(20)
+        padding-right: rem(60)
+
+    &.active
+      .search__input
+        opacity: 1
+        pointer-events: inherit
+        
+	

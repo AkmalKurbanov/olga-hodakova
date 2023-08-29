@@ -1,0 +1,286 @@
+*
+  margin: 0
+  box-sizing: border-box
+
+html,
+body
+  height: 100%
+  position: relative
+
+.no-scroll
+  overflow: hidden
+
+
+img
+  width: 100%
+
+.wrapper
+  display: flex
+  flex-direction: column
+  min-height: 100%
+
+  .content
+    flex: 1 0 auto
+
+.container
+  width: 100%
+  padding-right: rem(15px)
+  padding-left: rem(15px)
+  margin-right: auto
+  margin-left: auto
+  max-width: rem(1805px)
+  position: relative
+  box-sizing: border-box
+
+  @include lg
+    max-width: rem(960px)
+
+  @include md
+    max-width: rem(720px)
+
+  @include sm
+    max-width: rem(540px)
+
+  @include xs
+    max-width: 100%
+
+.title
+  margin: 0
+  &_h1
+    font-size: rem(64)
+    line-height: rem(64)
+    font-weight: 400
+
+    @include lg
+      font-size: rem(50)
+      line-height: rem(50)
+
+    @include md
+      font-size: rem(40)
+      line-height: rem(40)
+
+    @include sm
+      font-size: rem(30)
+      line-height: rem(30)
+
+  &_h2
+    font-size: rem(30)
+    font-weight: 400
+    line-height: rem(30)
+
+  &_light
+    color: $white
+
+  span
+    color: $accent
+
+.accent-color
+  color: $accent
+
+.secondary-color
+  color: $secondary
+
+.third-color
+  color: $third
+
+.white-color
+  color: $white!important
+
+.gray-color
+  color: #9E9E9E
+  
+.text-color
+  color: $text
+
+.fz-64
+  font-size: rem(64)
+
+.fz-34
+  font-size: rem(34)
+
+.fz-30
+  font-size: rem(30)     
+
+.fz-26
+  font-size: rem(26)       
+
+.fz-24
+  font-size: rem(24)
+
+.fz-22
+  font-size: rem(22)
+
+.fz-20
+  font-size: rem(20)
+
+.fz-18
+  font-size: rem(18)
+
+
+.semi-bold
+  font-weight: 600    
+
+.btn
+  background: $accent
+  border-radius: rem(70)
+  @include aic-jcc
+  display: inline-flex
+  text-align: center
+  color: $white
+  text-transform: uppercase
+  font-size: rem(16)
+  font-weight: 600
+  transition: $transition
+  min-height: rem(59)
+  padding: rem(13) rem(28)  
+  text-decoration: none
+  outline: none
+  border: none
+  cursor: pointer
+  white-space: nowrap
+
+  @include lg
+    font-size: rem(15)
+    min-height: rem(50)
+
+  @include md
+    font-size: rem(14)
+    min-height: rem(45)
+
+  @include sm
+    font-size: rem(13)
+    min-height: rem(40)
+
+
+  &:hover
+    background: #AE7131
+    box-shadow: 2px 4px 15px 0px rgba(0, 0, 0, 0.25) inset
+
+.text-left
+  text-align: left
+
+.text-center
+  text-align: center
+
+.text-right
+  text-align: right
+
+.text-uppercase
+  text-transform: uppercase
+
+
+
+.logo
+  color: $white
+  text-transform: uppercase
+  font-size: rem(20)
+  line-height: rem(22)
+  font-weight: 600
+  text-decoration: none
+
+  @media (max-width: 1699px)
+    font-size: rem(16)
+
+  @include xs
+    font-size: rem(14)
+
+  span
+    color: $accent
+
+
+.contacts
+  &__phone
+    transition: $transition
+    text-decoration: none
+    line-height: normal   
+    font-weight: 400
+
+  &__street   
+    font-size: rem(16)
+    line-height: normal
+    font-weight: 600
+    text-transform: uppercase
+    color: $white
+
+.social
+  ul
+    @include aic 
+    margin: 0
+    padding: 0
+
+    li
+      list-style: none
+      margin-right: rem(12)
+
+      
+
+
+      &:last-child
+        margin-right: 0
+
+      a
+        .icon
+          @include aic-jcc
+          svg
+            path
+              transition: $transition
+
+        &:hover
+          .icon_telegram
+            svg
+              path
+                fill: #309ABC         
+          
+          .icon_whatsapp
+            svg
+              path
+                fill: #52BD20         
+
+.blur-elem
+  filter: blur(40px)
+  position: absolute
+  
+  @include xs
+    display: none
+
+.counter-wrap
+  font-size: rem(64)
+  line-height: rem(64)
+  @include aic
+  margin-bottom: rem(10)
+
+.more
+  position: relative
+  color: #9E9E9E  
+  @include aic-jcc
+  display: inline-flex
+  text-decoration: none
+  transition: $transition
+  padding-right: rem(30)
+  white-space: nowrap
+
+  .icon
+    transition: $transition
+    position: absolute
+    right: 0
+    @include aic-jcc
+
+    svg
+      path
+        transition: $transition
+
+  &.white-color
+    .icon
+      svg
+        path
+          stroke: $white
+  &:hover
+    color: $accent!important
+    .icon
+      transform: translateX(5px)
+      svg
+        path
+          stroke: $accent
+
+
+     

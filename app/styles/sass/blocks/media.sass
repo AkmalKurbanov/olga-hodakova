@@ -1,0 +1,133 @@
+.media
+  padding: rem(100) 0
+  background-position: center
+  background-size: cover
+  position: relative
+  min-height: rem(815)
+  overflow: hidden
+  
+  @media (max-width: 1699px)
+    min-height: rem(700)
+    padding: rem(80) 0
+  
+  @media (max-width: 1500px)
+    padding: rem(60) 0
+
+  @include lg
+    padding: rem(40) 0
+    min-height: rem(600)
+
+  @include sm  
+    min-height: rem(400)
+
+  @media (min-width: 576px)
+    background-attachment: fixed  
+
+  &__img
+    max-width: rem(1085)
+    width: 100%
+    position: absolute
+    top: rem(40)
+    left: 50%
+    transform: translateX(-50%)
+
+    @media (max-width: 1699px)
+      max-width: rem(970)
+
+    @media (max-width: 1500px)
+      max-width: rem(870)
+
+    @include lg  
+      max-width: rem(800)
+
+    @include sm
+      max-width: rem(500)
+        
+
+
+  &__text
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+
+  &__text-item
+    display: inline-block
+    position: absolute
+    
+    .icon
+      @include md
+        width: rem(15)
+
+    p
+      @media (max-width: 1699px)
+        font-size: rem(18)
+      
+      @media (max-width: 1500px)
+        font-size: rem(16)
+      
+      @include lg
+        font-size: rem(14)
+
+      @include md
+        font-size: rem(10)
+
+      @include sm
+        font-size: rem(8)
+
+      @include xs
+        font-size: rem(7)  
+
+      span
+        color: $accent
+        font-weight: 600
+    a
+      margin-top: rem(30)
+
+      @media (max-width: 1699px)
+        font-size: rem(18)
+      
+      @media (max-width: 1500px)
+        font-size: rem(16)
+      
+      @include lg
+        font-size: rem(14)
+
+      @include md
+        font-size: rem(10)
+        margin-top: rem(10)
+        padding-right: rem(20)
+
+      @include xs
+        font-size: rem(8)
+        
+    
+    &:first-child
+      text-align: right
+      left: rem(-35)
+      top: 50%
+
+      @media (max-width: 1699px)
+        left: rem(-15)
+      
+      @include lg
+        left: rem(5)
+
+      @include xs
+        top: 60%    
+
+    &:last-child
+      right: rem(-125)
+      bottom: 50%
+      
+      @media (max-width: 1699px)
+        right: rem(-80)
+
+      @media (max-width: 1500px)
+        right: rem(-40)
+
+      @include lg
+        right: rem(5)
+
+      @include xs
+        bottom: 20%  

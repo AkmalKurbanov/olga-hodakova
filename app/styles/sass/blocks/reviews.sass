@@ -1,0 +1,255 @@
+.reviews
+  padding-top: rem(150)
+  padding-bottom: rem(230)
+  background: #F2F2F2
+  
+  @media (max-width: 1699px)
+    padding-top: rem(120)
+    padding-bottom: rem(200)
+  
+  @media (max-width: 1500px)
+    padding-top: rem(100)
+    padding-bottom: rem(150)
+
+  @include lg  
+    padding-top: rem(80)
+    padding-bottom: rem(100)
+  
+  @include md  
+    padding-top: rem(60)
+    padding-bottom: rem(80)
+  
+  @include sm  
+    padding-top: rem(40)
+    padding-bottom: rem(60)
+
+  &__slide
+    @include aife
+
+    @include sm
+      flex-direction: column
+      align-items: flex-start
+
+  &__reviewer
+    margin-right: rem(200)
+    
+    @media (max-width: 1699px)
+      margin-right: rem(100)
+
+    @media (max-width: 1500px)
+      margin-right: rem(50)
+
+    @include md
+      margin-right: rem(30)
+
+    @include sm
+      margin-right: 0
+      margin-bottom: rem(20)
+
+
+
+  &__reviewer-img
+    max-width: rem(250)
+    min-width: rem(250)
+    width: 100%
+    border-radius: 100%
+    @include aic-jcc
+    overflow: hidden
+
+    @include lg
+      max-width: rem(200)
+      min-width: rem(200)
+
+    @include md
+      max-width: rem(150)
+      min-width: rem(150)
+
+    @include sm
+      max-width: rem(100)
+      min-width: rem(100)
+
+
+
+  &__reviewer-name
+    margin-top: rem(15)
+    p
+      margin-bottom: rem(15)
+      &:last-child
+        margin-bottom: 0  
+
+    .fz-26
+      @media (max-width: 1699px)
+        font-size: rem(24)
+
+      @media (max-width: 1500px)
+        font-size: rem(22)
+
+      @include lg  
+        font-size: rem(20)
+
+      @include md  
+        font-size: rem(18)
+      
+      @include sm  
+        font-size: rem(16)
+      
+      @include xs  
+        font-size: rem(14)
+
+    .fz-20
+      @media (max-width: 1699px)
+        font-size: rem(18)
+
+      @media (max-width: 1500px)
+        font-size: rem(16)
+
+      @include lg  
+        font-size: rem(14)
+
+      @include md  
+        font-size: rem(12)
+      
+      @include sm  
+        font-size: rem(10)
+      
+        
+  &__text
+    max-width: rem(1000)
+    width: 100%
+
+    .title
+      margin-bottom: rem(60)  
+      padding-right: rem(150)
+      position: relative
+
+      @media (max-width: 1699px)
+        margin-bottom: rem(30)  
+        font-size: rem(40)
+        line-height: normal
+
+      @media (max-width: 1500px)
+        margin-bottom: rem(30)  
+        font-size: rem(38)
+
+      @include lg  
+        font-size: rem(36)
+        padding-right: rem(150)
+
+      @include md  
+        font-size: rem(34)
+        padding-right: rem(90)
+
+      @include sm  
+        font-size: rem(30)
+        padding-right: 0
+      
+      @include xs  
+        font-size: rem(28)
+        
+
+
+    p
+      margin-bottom: rem(30)
+
+      @include sm
+        margin-bottom: rem(15)
+
+
+      &:last-child
+        margin-bottom: 0
+
+    .fz-30
+      @media (max-width: 1699px)
+        font-size: rem(28)  
+      
+      @media (max-width: 1500px)
+        font-size: rem(26)  
+
+      @include lg  
+        font-size: rem(24)  
+
+      @include md  
+        font-size: rem(22)  
+
+      @include sm  
+        font-size: rem(20)  
+
+      @include xs  
+        font-size: rem(18)  
+
+    .fz-22
+      @media (max-width: 1699px)
+        font-size: rem(20)  
+      
+      @media (max-width: 1500px)
+        font-size: rem(18)  
+
+      @include lg  
+        font-size: rem(16)  
+
+      @include md  
+        font-size: rem(14)  
+
+      @include sm  
+        font-size: rem(12)  
+
+      @include xs  
+        font-size: rem(10)  
+
+  .swiper-wrapper
+    position: relative
+
+    
+      
+
+  &__nav
+    @include aic-jcc
+    display: inline-flex
+    position: absolute
+    right: rem(15)
+    bottom: rem(-30)
+    z-index: 9
+
+    .reviews__nav-btn
+      width: rem(60)
+      height: rem(60)
+      @include aic-jcc
+      cursor: pointer
+      background: #C99D70
+      transition: $transition
+
+      @media (max-width: 1699px)
+        width: rem(50)
+        height: rem(50)
+
+      @media (max-width: 1500px)
+        width: rem(30)
+        height: rem(30)
+
+      &:hover
+        background: $accent 
+
+  .more
+    position: absolute
+    right: 0
+    bottom: 0
+    z-index: 9
+    font-size: rem(16)
+    line-height: normal
+
+    @media (max-width: 1699px)
+      top: rem(80)
+
+    @include md
+      font-size: rem(10)
+      padding-right: rem(15)
+
+    .icon
+      @include md
+        width: rem(12)
+
+    &:hover
+      .icon
+        transform: none
+      
+  

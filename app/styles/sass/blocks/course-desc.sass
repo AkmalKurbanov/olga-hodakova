@@ -1,0 +1,234 @@
+.course-desc
+  background-position: center
+  background-size: cover
+  padding-top: rem(140)
+  padding-bottom: rem(100)
+  position: relative
+  overflow: hidden
+
+  @media (max-width: 1699px)
+    padding-top: rem(120)
+    padding-bottom: rem(80)
+
+  @media (max-width: 1500px)
+    padding-top: rem(100)
+    padding-bottom: rem(70)
+
+  @include lg
+    padding-top: rem(80)
+    padding-bottom: rem(60)
+
+  @include md
+    padding-top: rem(60)
+    padding-bottom: rem(50)
+
+  @include sm
+    padding-top: rem(40)
+    padding-bottom: rem(40)
+
+  @media (min-width: 576px)
+    background-attachment: fixed
+
+  .blur-elem
+    position: fixed
+    left: rem(-360)
+    top: -400px
+    z-index: -1
+
+  &__flex-wrap
+    border: rem(1) solid $white
+    @include aistr
+
+    @include sm
+      flex-direction: column
+      border: none
+
+  &__col
+    border-right: rem(1) solid $white
+    padding: rem(60)
+    width: 50%
+
+    @media (max-width: 1699px)
+      padding: rem(30) rem(30) rem(60)
+
+    @media (max-width: 1500px)
+      padding: rem(20) rem(20) rem(60)
+
+    @include sm
+      border: rem(1) solid $white
+      width: 100%
+
+    &:first-child
+      @include fdc-jfcsb
+      
+      @include sm
+        margin-bottom: rem(30)
+
+    &:last-child
+      border-right: none
+      position: relative
+
+      @include sm
+        border-right: rem(1) solid $white
+
+
+      .course-desc__item
+        padding: rem(15) 0
+
+      .btn
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: rem(-25)
+
+      ul
+        padding: 0
+        margin: rem(30) 0
+
+        li
+          color: #d7d7d7
+          font-size: rem(22)
+          margin-bottom: rem(15)
+          list-style: none
+          position: relative
+          padding-left: rem(19)
+
+          @media (max-width: 1699px)
+            font-size: rem(20)
+
+          @media (max-width: 1500px)
+            font-size: rem(18)
+
+          @include lg
+            font-size: rem(16)
+          
+          @include md
+            font-size: rem(14)
+            padding-left: rem(15)
+
+          &:before
+            position: absolute
+            content: ''
+            width: rem(9)
+            height: rem(9)
+            border-radius: 100%
+            background: $accent
+            top: rem(8)
+            left: 0
+            
+            @include md
+              width: rem(5)
+              height: rem(5)
+              top: rem(6)
+
+          &:last-child
+            margin-bottom: 0
+
+          span
+            font-weight: 600
+
+  .between
+    margin: 0!important
+    padding: 0
+    li
+      list-style: none
+      @include aic-jfcsb
+      padding-left: 0!important
+
+      span
+        font-weight: inherit!important
+
+      &:before
+        display: none
+
+  &__item
+    border-bottom: rem(1) solid $white
+    padding: rem(40) 0
+
+    @media (max-width: 1699px)
+      padding: rem(30) 0
+
+    @media (max-width: 1500px)
+      padding: rem(20) 0
+
+    &:first-child
+      padding-top: 0
+
+    div
+      margin-bottom: rem(30)
+      &:last-child
+        margin-bottom: 0
+      p
+        margin-bottom: rem(5)
+
+        &:last-child
+          margin-bottom: 0
+
+  &__col-flex-bock
+    @include sm
+      margin: rem(15) 0
+
+  .fz-34
+    @media (max-width: 1699px)
+      font-size: rem(30)
+
+    @media (max-width: 1500px)
+      font-size: rem(28)
+
+    @include lg  
+      font-size: rem(26)
+    
+    @include md  
+      font-size: rem(24)
+
+  .fz-26
+    @media (max-width: 1699px)
+      font-size: rem(22)
+
+    @media (max-width: 1500px)
+      font-size: rem(20)
+
+    @include lg  
+      font-size: rem(18)
+    
+    @include md  
+      font-size: rem(16)
+
+  .fz-22
+    @media (max-width: 1699px)
+      font-size: rem(20)
+
+    @media (max-width: 1500px)
+      font-size: rem(18)
+    
+    @include lg  
+      font-size: rem(16)
+    
+    @include md  
+      font-size: rem(14)
+
+  .fz-24
+    @media (max-width: 1699px)
+      font-size: rem(22)
+    
+    @media (max-width: 1500px)
+      font-size: rem(20)
+    
+    @include lg  
+      font-size: rem(18)
+    
+    @include md  
+      font-size: rem(16)
+
+  .fz-20
+    @media (max-width: 1699px)
+      font-size: rem(18)
+
+    @media (max-width: 1500px)
+      font-size: rem(16)
+    
+    @include lg  
+      font-size: rem(14)
+    
+    @include md  
+      font-size: rem(12)
