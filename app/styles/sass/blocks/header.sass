@@ -38,15 +38,12 @@
 
   .contacts
     @include aic-jcc
-    margin-right: rem(40)
 
     @include md
       flex-wrap: wrap
       justify-content: flex-end
-      margin-right: rem(25)
 
-    @include xs
-      margin-right: rem(15)  
+    
 
     &__phone
       color: $white
@@ -102,7 +99,13 @@
 
   .search
     position: relative
+    margin-left: rem(40)
+
+    @include md
+      margin-left: rem(25)  
     
+    @include xs
+      margin-right: rem(15)  
     .icon
       width: 100%
       max-width: rem(40)

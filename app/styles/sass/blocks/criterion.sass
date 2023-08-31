@@ -22,11 +22,19 @@
   .swiper 
     margin-top: rem(80)
 
-    @include sm
+    @include md
+      max-width: rem(690)
+      margin: auto
       margin-top: rem(60)
+      border: rem(1) solid #bcbcbc 
+      border-left: none
+    
+    @include sm  
+      max-width: rem(510)
 
     @include xs
       margin-top: rem(40)
+      border: none  
 
   &__item
     border: rem(1) solid #bcbcbc 
@@ -34,16 +42,23 @@
     border-right: none
     height: 100%
 
-    @media (max-width: 1699px)
-      padding: rem(35)
-
     @media (max-width: 1500px)
-      padding: rem(35) rem(20)
+      padding: rem(40) rem(30)
+    
+    @include lg  
+      padding: rem(25)
+
+    @include md
+      border-top: none 
+      border-bottom: none 
 
     @include xs
       text-align: center
       border: none
       padding: 0 rem(15)
+
+    
+        
 
   &__img
     max-width: rem(250)
@@ -54,10 +69,15 @@
     margin-bottom: rem(25)
     position: relative
 
-    @media (max-width: 1699px)
-      max-width: rem(150)
-      min-width: rem(150)
-      height: rem(150)
+    @media (max-width: 1400px)
+      max-width: rem(200)
+      min-width: rem(200)
+      height: rem(200)
+
+    @include lg
+      max-width: rem(170)
+      min-width: rem(170)
+      height: rem(170)
 
     @include xs
       margin: auto  
@@ -80,10 +100,13 @@
     margin-bottom: rem(25)
 
     @media (max-width: 1699px)
-      font-size: rem(25)
-    @media (max-width: 1500px)
-      font-size: rem(20)
+      font-size: rem(30)
 
+    @media (max-width: 1400px)
+      font-size: rem(25)
+
+    @include lg
+      font-size: rem(20)
     
 
   &__desc
@@ -99,6 +122,9 @@
         font-size: rem(18)
         margin-bottom: rem(10)
 
+      @include lg  
+        font-size: rem(16)
+
 
       span
         color: $accent
@@ -113,3 +139,4 @@
 
     .swiper-slide
       height: auto
+

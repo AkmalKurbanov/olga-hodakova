@@ -36,6 +36,8 @@
       flex-direction: column
 
 
+  
+
   &__flex-item
     width: 100%
     position: relative
@@ -43,29 +45,22 @@
     .title
       position: relative
 
+    
+
+      
+
+        
+
     &:first-child
-      @include jfcfe
-
-      @media (max-width: 1699px)
-        margin-bottom: rem(30)  
-
-      @include md
-        max-width: 50%
-        @include aic
-        order: 2
-
-      @include sm  
-        order: 1
-        max-width: 100%
-        justify-content: flex-start
-
-
-    &:nth-child(2)
       max-width: rem(708)
+      @include aife
 
       @media (max-width: 1699px)
         max-width: calc( 40% - 20px )
 
+      @include lg
+        align-items: flex-start
+        
       @include md
         order: 1
 
@@ -76,7 +71,7 @@
       
 
 
-    &:nth-child(3)
+    &:last-child
       max-width: rem(810)
       display: flex
       flex-direction: column
@@ -95,6 +90,32 @@
       .title
         margin: rem(10) 0 rem(50) 0
 
+
+  &__title
+    margin-bottom: rem(175) !important
+    margin-top: 0!important
+
+    @media (max-width: 1699px)
+      margin-bottom: rem(150) !important
+
+    @media (max-width: 1500px)
+      margin-bottom: rem(100) !important
+
+    @media (max-width: 1400px)
+      margin-bottom: rem(80) !important
+
+    @media (max-width: 1300px)
+      margin-bottom: rem(60) !important
+
+    @include lg
+      display: none
+
+    &_hidden
+      display: none
+      @include lg
+        display: block !important  
+        margin-bottom: rem(30)!important 
+        padding: 0 rem(15)
   &__img
     position: relative
     @include aic-jcc
@@ -213,10 +234,6 @@
     &:first-child
       @include sm
         margin-bottom: rem(20)  
-    
-
-    p
-      text-align: justify
       
     .btn
       margin-top: rem(25)
